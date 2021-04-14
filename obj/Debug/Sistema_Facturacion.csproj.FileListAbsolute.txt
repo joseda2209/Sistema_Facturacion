@@ -1,0 +1,15 @@
+C:\Users\Daniel\Documents\Herramientas_Programacion_3\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.csprojAssemblyReference.cache
+C:\Users\Daniel\Documents\Herramientas_Programacion_3\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.FrmAcerca.resources
+C:\Users\Daniel\Documents\Herramientas_Programacion_3\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.FrmAyuda.resources
+C:\Users\Daniel\Documents\Herramientas_Programacion_3\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.FrmLogin.resources
+C:\Users\Daniel\Documents\Herramientas_Programacion_3\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.FrmPrincipal.resources
+C:\Users\Daniel\Documents\Herramientas_Programacion_3\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.Properties.Resources.resources
+C:\Users\Daniel\Documents\Herramientas_Programacion_3\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.csproj.GenerateResource.cache
+C:\Users\Daniel\Documents\Herramientas_Programacion_3\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.csproj.CoreCompileInputs.cache
+C:\Users\Daniel\Documents\Herramientas_Programacion_3\Sistema_Facturacion\bin\Debug\Sistema_Facturacion.exe.config
+C:\Users\Daniel\Documents\Herramientas_Programacion_3\Sistema_Facturacion\bin\Debug\Sistema_Facturacion.exe
+C:\Users\Daniel\Documents\Herramientas_Programacion_3\Sistema_Facturacion\bin\Debug\Sistema_Facturacion.pdb
+C:\Users\Daniel\Documents\Herramientas_Programacion_3\Sistema_Facturacion\bin\Debug\MaterialSkin.dll
+C:\Users\Daniel\Documents\Herramientas_Programacion_3\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.csproj.CopyComplete
+C:\Users\Daniel\Documents\Herramientas_Programacion_3\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.exe
+C:\Users\Daniel\Documents\Herramientas_Programacion_3\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.pdb
