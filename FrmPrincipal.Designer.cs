@@ -33,39 +33,39 @@
             this.pnlMenu = new System.Windows.Forms.Panel();
             this.tbpMenu = new MaterialSkin.Controls.MaterialTabControl();
             this.Principal = new System.Windows.Forms.TabPage();
-            this.btnSalir = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Tablas = new System.Windows.Forms.TabPage();
-            this.btnCategorias = new System.Windows.Forms.Button();
-            this.btnProductos = new System.Windows.Forms.Button();
-            this.btnClientes = new System.Windows.Forms.Button();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.Facturación = new System.Windows.Forms.TabPage();
             this.btnInformes = new System.Windows.Forms.Button();
             this.btnFacturas = new System.Windows.Forms.Button();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.Seguridad = new System.Windows.Forms.TabPage();
             this.btnSeguridad = new System.Windows.Forms.Button();
             this.btnRoles = new System.Windows.Forms.Button();
             this.btnEmpleados = new System.Windows.Forms.Button();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.Acerca = new System.Windows.Forms.TabPage();
             this.btnAcerca = new System.Windows.Forms.Button();
             this.btnAyuda = new System.Windows.Forms.Button();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.TabOpcionesMenu = new MaterialSkin.Controls.MaterialTabSelector();
+            this.btnSalir = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnCategorias = new System.Windows.Forms.Button();
+            this.btnProductos = new System.Windows.Forms.Button();
+            this.btnClientes = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pnlPrincipal.SuspendLayout();
             this.pnlMenu.SuspendLayout();
             this.tbpMenu.SuspendLayout();
             this.Principal.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.Tablas.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.Facturación.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.Seguridad.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.Acerca.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
@@ -131,35 +131,6 @@
             this.Principal.TabIndex = 0;
             this.Principal.Text = "Principal";
             // 
-            // btnSalir
-            // 
-            this.btnSalir.FlatAppearance.BorderSize = 0;
-            this.btnSalir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(138)))), ((int)(((byte)(139)))));
-            this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSalir.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalir.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(212)))), ((int)(((byte)(109)))));
-            this.btnSalir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSalir.Location = new System.Drawing.Point(0, 171);
-            this.btnSalir.Margin = new System.Windows.Forms.Padding(2);
-            this.btnSalir.Name = "btnSalir";
-            this.btnSalir.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btnSalir.Size = new System.Drawing.Size(176, 37);
-            this.btnSalir.TabIndex = 1;
-            this.btnSalir.Text = "Salir";
-            this.btnSalir.UseVisualStyleBackColor = true;
-            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Sistema_Facturacion.Properties.Resources.chip;
-            this.pictureBox1.Location = new System.Drawing.Point(21, 4);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(134, 136);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
             // Tablas
             // 
             this.Tablas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(40)))), ((int)(((byte)(49)))));
@@ -174,71 +145,6 @@
             this.Tablas.Size = new System.Drawing.Size(192, 504);
             this.Tablas.TabIndex = 1;
             this.Tablas.Text = "Admin Tablas";
-            // 
-            // btnCategorias
-            // 
-            this.btnCategorias.FlatAppearance.BorderSize = 0;
-            this.btnCategorias.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(138)))), ((int)(((byte)(139)))));
-            this.btnCategorias.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCategorias.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCategorias.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(212)))), ((int)(((byte)(109)))));
-            this.btnCategorias.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCategorias.Location = new System.Drawing.Point(0, 284);
-            this.btnCategorias.Margin = new System.Windows.Forms.Padding(2);
-            this.btnCategorias.Name = "btnCategorias";
-            this.btnCategorias.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btnCategorias.Size = new System.Drawing.Size(210, 37);
-            this.btnCategorias.TabIndex = 5;
-            this.btnCategorias.Text = "Categorias";
-            this.btnCategorias.UseVisualStyleBackColor = true;
-            this.btnCategorias.Click += new System.EventHandler(this.btnCategorias_Click);
-            // 
-            // btnProductos
-            // 
-            this.btnProductos.FlatAppearance.BorderSize = 0;
-            this.btnProductos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(138)))), ((int)(((byte)(139)))));
-            this.btnProductos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnProductos.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnProductos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(212)))), ((int)(((byte)(109)))));
-            this.btnProductos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnProductos.Location = new System.Drawing.Point(0, 228);
-            this.btnProductos.Margin = new System.Windows.Forms.Padding(2);
-            this.btnProductos.Name = "btnProductos";
-            this.btnProductos.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btnProductos.Size = new System.Drawing.Size(210, 37);
-            this.btnProductos.TabIndex = 4;
-            this.btnProductos.Text = "Productos";
-            this.btnProductos.UseVisualStyleBackColor = true;
-            this.btnProductos.Click += new System.EventHandler(this.btnProductos_Click);
-            // 
-            // btnClientes
-            // 
-            this.btnClientes.FlatAppearance.BorderSize = 0;
-            this.btnClientes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(138)))), ((int)(((byte)(139)))));
-            this.btnClientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClientes.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClientes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(212)))), ((int)(((byte)(109)))));
-            this.btnClientes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnClientes.Location = new System.Drawing.Point(0, 171);
-            this.btnClientes.Margin = new System.Windows.Forms.Padding(2);
-            this.btnClientes.Name = "btnClientes";
-            this.btnClientes.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btnClientes.Size = new System.Drawing.Size(194, 37);
-            this.btnClientes.TabIndex = 3;
-            this.btnClientes.Text = "Clientes";
-            this.btnClientes.UseVisualStyleBackColor = true;
-            this.btnClientes.Click += new System.EventHandler(this.btnClientes_Click);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::Sistema_Facturacion.Properties.Resources.chip;
-            this.pictureBox2.Location = new System.Drawing.Point(21, 4);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(134, 136);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 2;
-            this.pictureBox2.TabStop = false;
             // 
             // Facturación
             // 
@@ -260,6 +166,7 @@
             this.btnInformes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInformes.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnInformes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(212)))), ((int)(((byte)(109)))));
+            this.btnInformes.Image = global::Sistema_Facturacion.Properties.Resources.contract;
             this.btnInformes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnInformes.Location = new System.Drawing.Point(0, 228);
             this.btnInformes.Margin = new System.Windows.Forms.Padding(2);
@@ -278,6 +185,7 @@
             this.btnFacturas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFacturas.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFacturas.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(212)))), ((int)(((byte)(109)))));
+            this.btnFacturas.Image = global::Sistema_Facturacion.Properties.Resources.list__2_;
             this.btnFacturas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnFacturas.Location = new System.Drawing.Point(0, 171);
             this.btnFacturas.Margin = new System.Windows.Forms.Padding(2);
@@ -288,17 +196,6 @@
             this.btnFacturas.Text = "Facturas";
             this.btnFacturas.UseVisualStyleBackColor = true;
             this.btnFacturas.Click += new System.EventHandler(this.btnFacturas_Click);
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::Sistema_Facturacion.Properties.Resources.chip;
-            this.pictureBox3.Location = new System.Drawing.Point(21, 4);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(134, 136);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 4;
-            this.pictureBox3.TabStop = false;
             // 
             // Seguridad
             // 
@@ -321,6 +218,7 @@
             this.btnSeguridad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSeguridad.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSeguridad.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(212)))), ((int)(((byte)(109)))));
+            this.btnSeguridad.Image = global::Sistema_Facturacion.Properties.Resources.padlock;
             this.btnSeguridad.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSeguridad.Location = new System.Drawing.Point(0, 284);
             this.btnSeguridad.Margin = new System.Windows.Forms.Padding(2);
@@ -339,6 +237,7 @@
             this.btnRoles.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRoles.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRoles.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(212)))), ((int)(((byte)(109)))));
+            this.btnRoles.Image = global::Sistema_Facturacion.Properties.Resources.skills;
             this.btnRoles.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnRoles.Location = new System.Drawing.Point(0, 228);
             this.btnRoles.Margin = new System.Windows.Forms.Padding(2);
@@ -357,6 +256,7 @@
             this.btnEmpleados.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEmpleados.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEmpleados.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(212)))), ((int)(((byte)(109)))));
+            this.btnEmpleados.Image = global::Sistema_Facturacion.Properties.Resources.employees;
             this.btnEmpleados.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnEmpleados.Location = new System.Drawing.Point(0, 171);
             this.btnEmpleados.Margin = new System.Windows.Forms.Padding(2);
@@ -367,17 +267,6 @@
             this.btnEmpleados.Text = "Empleados";
             this.btnEmpleados.UseVisualStyleBackColor = true;
             this.btnEmpleados.Click += new System.EventHandler(this.btnEmpleados_Click);
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::Sistema_Facturacion.Properties.Resources.chip;
-            this.pictureBox4.Location = new System.Drawing.Point(21, 4);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(134, 136);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 7;
-            this.pictureBox4.TabStop = false;
             // 
             // Acerca
             // 
@@ -399,6 +288,7 @@
             this.btnAcerca.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAcerca.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAcerca.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(212)))), ((int)(((byte)(109)))));
+            this.btnAcerca.Image = global::Sistema_Facturacion.Properties.Resources.info;
             this.btnAcerca.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAcerca.Location = new System.Drawing.Point(0, 228);
             this.btnAcerca.Margin = new System.Windows.Forms.Padding(2);
@@ -417,6 +307,7 @@
             this.btnAyuda.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAyuda.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAyuda.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(212)))), ((int)(((byte)(109)))));
+            this.btnAyuda.Image = global::Sistema_Facturacion.Properties.Resources.transparency;
             this.btnAyuda.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAyuda.Location = new System.Drawing.Point(0, 171);
             this.btnAyuda.Margin = new System.Windows.Forms.Padding(2);
@@ -427,17 +318,6 @@
             this.btnAyuda.Text = "Ayuda";
             this.btnAyuda.UseVisualStyleBackColor = true;
             this.btnAyuda.Click += new System.EventHandler(this.btnAyuda_Click);
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = global::Sistema_Facturacion.Properties.Resources.chip;
-            this.pictureBox5.Location = new System.Drawing.Point(21, 4);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(134, 136);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 10;
-            this.pictureBox5.TabStop = false;
             // 
             // TabOpcionesMenu
             // 
@@ -450,6 +330,137 @@
             this.TabOpcionesMenu.Size = new System.Drawing.Size(655, 19);
             this.TabOpcionesMenu.TabIndex = 1;
             this.TabOpcionesMenu.Click += new System.EventHandler(this.TabOpcionesMenu_Click);
+            // 
+            // btnSalir
+            // 
+            this.btnSalir.FlatAppearance.BorderSize = 0;
+            this.btnSalir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(138)))), ((int)(((byte)(139)))));
+            this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSalir.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalir.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(212)))), ((int)(((byte)(109)))));
+            this.btnSalir.Image = global::Sistema_Facturacion.Properties.Resources.log_out__1_;
+            this.btnSalir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSalir.Location = new System.Drawing.Point(0, 171);
+            this.btnSalir.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.btnSalir.Size = new System.Drawing.Size(176, 37);
+            this.btnSalir.TabIndex = 1;
+            this.btnSalir.Text = "Salir";
+            this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Sistema_Facturacion.Properties.Resources.chip;
+            this.pictureBox1.Location = new System.Drawing.Point(21, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(134, 136);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // btnCategorias
+            // 
+            this.btnCategorias.FlatAppearance.BorderSize = 0;
+            this.btnCategorias.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(138)))), ((int)(((byte)(139)))));
+            this.btnCategorias.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCategorias.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCategorias.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(212)))), ((int)(((byte)(109)))));
+            this.btnCategorias.Image = global::Sistema_Facturacion.Properties.Resources.list__1_;
+            this.btnCategorias.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCategorias.Location = new System.Drawing.Point(0, 284);
+            this.btnCategorias.Margin = new System.Windows.Forms.Padding(2);
+            this.btnCategorias.Name = "btnCategorias";
+            this.btnCategorias.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.btnCategorias.Size = new System.Drawing.Size(210, 37);
+            this.btnCategorias.TabIndex = 5;
+            this.btnCategorias.Text = "Categorias";
+            this.btnCategorias.UseVisualStyleBackColor = true;
+            this.btnCategorias.Click += new System.EventHandler(this.btnCategorias_Click);
+            // 
+            // btnProductos
+            // 
+            this.btnProductos.FlatAppearance.BorderSize = 0;
+            this.btnProductos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(138)))), ((int)(((byte)(139)))));
+            this.btnProductos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnProductos.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProductos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(212)))), ((int)(((byte)(109)))));
+            this.btnProductos.Image = global::Sistema_Facturacion.Properties.Resources.box;
+            this.btnProductos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnProductos.Location = new System.Drawing.Point(0, 228);
+            this.btnProductos.Margin = new System.Windows.Forms.Padding(2);
+            this.btnProductos.Name = "btnProductos";
+            this.btnProductos.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.btnProductos.Size = new System.Drawing.Size(210, 37);
+            this.btnProductos.TabIndex = 4;
+            this.btnProductos.Text = "Productos";
+            this.btnProductos.UseVisualStyleBackColor = true;
+            this.btnProductos.Click += new System.EventHandler(this.btnProductos_Click);
+            // 
+            // btnClientes
+            // 
+            this.btnClientes.FlatAppearance.BorderSize = 0;
+            this.btnClientes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(138)))), ((int)(((byte)(139)))));
+            this.btnClientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClientes.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClientes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(212)))), ((int)(((byte)(109)))));
+            this.btnClientes.Image = global::Sistema_Facturacion.Properties.Resources.client;
+            this.btnClientes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnClientes.Location = new System.Drawing.Point(0, 171);
+            this.btnClientes.Margin = new System.Windows.Forms.Padding(2);
+            this.btnClientes.Name = "btnClientes";
+            this.btnClientes.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.btnClientes.Size = new System.Drawing.Size(194, 37);
+            this.btnClientes.TabIndex = 3;
+            this.btnClientes.Text = "Clientes";
+            this.btnClientes.UseVisualStyleBackColor = true;
+            this.btnClientes.Click += new System.EventHandler(this.btnClientes_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::Sistema_Facturacion.Properties.Resources.chip;
+            this.pictureBox2.Location = new System.Drawing.Point(21, 4);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(134, 136);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 2;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::Sistema_Facturacion.Properties.Resources.chip;
+            this.pictureBox3.Location = new System.Drawing.Point(21, 4);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(134, 136);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 4;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::Sistema_Facturacion.Properties.Resources.chip;
+            this.pictureBox4.Location = new System.Drawing.Point(21, 4);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(134, 136);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 7;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::Sistema_Facturacion.Properties.Resources.chip;
+            this.pictureBox5.Location = new System.Drawing.Point(21, 4);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(134, 136);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox5.TabIndex = 10;
+            this.pictureBox5.TabStop = false;
             // 
             // FrmPrincipal
             // 
@@ -468,14 +479,14 @@
             this.pnlMenu.ResumeLayout(false);
             this.tbpMenu.ResumeLayout(false);
             this.Principal.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.Tablas.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.Facturación.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.Seguridad.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.Acerca.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ResumeLayout(false);
 
