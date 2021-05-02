@@ -24,15 +24,31 @@ namespace Sistema_Facturacion
 
         private void btnValidar_Click(object sender, EventArgs e)
         {
-            if (txtUsuario.Text != String.Empty && txtPassword.Text != String.Empty)
+            string Respuesta = ""; // creamos variable para controlar si encontró el usuario en la base de datos
+            if (txtUsuario.Text != "" && txtPassword.Text != string.Empty) // verifico que el usuario y la clave del los campos del formulario no estén vacíos
             {
-                if (txtUsuario.Text == "user" && txtPassword.Text == "123")
+                Acceso_Datos Acceso = new Acceso_Datos(); // creamos un objeto con la clase Acceso_datos
+                Respuesta = Acceso.ValidarUsuario(txtUsuario.Text, txtPassword.Text);
+                if (Respuesta != "")
                 {
-                    FrmPrincipal frmprincipal = new FrmPrincipal();
-                    this.Hide();
-                    frmprincipal.Show();
+                    MessageBox.Show("Bienvenido : " + Respuesta);
+                    FrmPrincipal frmppal = new FrmPrincipal(); //Creamos el objeto del formulario FrmPrincipal
+                    this.Hide(); // Ocultamos el formulario login
+                    frmppal.Show(); // Mostramos el formulario principal
                 }
+                else
+                {
+                    MessageBox.Show("USUARIOS Y CLAVE NO ENCONTRADOS");
+                    txtUsuario.Text = "";
+                    txtUsuario.Focus();
+                    txtPassword.Text = "";
+                }
+            }
+            else
+            {
+                MessageBox.Show("Debes ingresar un usuario y una clave");
             }
         }
     }
 }
+

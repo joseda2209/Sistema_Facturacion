@@ -13,3 +13,5 @@ C:\Users\Daniel\Documents\Herramientas_Programacion_3\Sistema_Facturacion\bin\De
 C:\Users\Daniel\Documents\Herramientas_Programacion_3\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.csproj.CopyComplete
 C:\Users\Daniel\Documents\Herramientas_Programacion_3\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.exe
 C:\Users\Daniel\Documents\Herramientas_Programacion_3\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.pdb
+C:\Users\Daniel\Documents\Herramientas_Programacion_3\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.FrmCategoria.resources
+C:\Users\Daniel\Documents\Herramientas_Programacion_3\Sistema_Facturacion\obj\Debug\Sistema_Facturacion.FrmListaFacturas.resources

@@ -47,15 +47,15 @@
             this.txtBuscar = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.panel4 = new System.Windows.Forms.Panel();
             this.btnSalir = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.txtIdCliente = new System.Windows.Forms.TextBox();
+            this.MensajeError = new System.Windows.Forms.ErrorProvider(this.components);
             this.pnlTitulo.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgClientes)).BeginInit();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MensajeError)).BeginInit();
             this.SuspendLayout();
             // 
             // lblTitulo
@@ -200,6 +200,7 @@
             this.btnEliminar.TabIndex = 2;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // btnActualizar
             // 
@@ -213,6 +214,7 @@
             this.btnActualizar.TabIndex = 1;
             this.btnActualizar.Text = "Actualizar";
             this.btnActualizar.UseVisualStyleBackColor = true;
+            this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
             // 
             // btnNuevo
             // 
@@ -226,6 +228,7 @@
             this.btnNuevo.TabIndex = 0;
             this.btnNuevo.Text = "Nuevo";
             this.btnNuevo.UseVisualStyleBackColor = true;
+            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
             // panel3
             // 
@@ -246,8 +249,9 @@
             this.dgClientes.Name = "dgClientes";
             this.dgClientes.RowHeadersWidth = 51;
             this.dgClientes.RowTemplate.Height = 24;
-            this.dgClientes.Size = new System.Drawing.Size(466, 147);
+            this.dgClientes.Size = new System.Drawing.Size(466, 149);
             this.dgClientes.TabIndex = 2;
+            this.dgClientes.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgClientes_CellMouseClick);
             // 
             // btnBuscar
             // 
@@ -261,6 +265,7 @@
             this.btnBuscar.TabIndex = 1;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // txtBuscar
             // 
@@ -301,17 +306,17 @@
             this.btnSalir.UseVisualStyleBackColor = true;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
-            // errorProvider1
-            // 
-            this.errorProvider1.ContainerControl = this;
-            // 
             // txtIdCliente
             // 
-            this.txtIdCliente.Location = new System.Drawing.Point(364, 207);
+            this.txtIdCliente.Location = new System.Drawing.Point(439, 207);
             this.txtIdCliente.Name = "txtIdCliente";
-            this.txtIdCliente.Size = new System.Drawing.Size(39, 20);
+            this.txtIdCliente.Size = new System.Drawing.Size(40, 20);
             this.txtIdCliente.TabIndex = 5;
             this.txtIdCliente.Visible = false;
+            // 
+            // MensajeError
+            // 
+            this.MensajeError.ContainerControl = this;
             // 
             // FrmClientes
             // 
@@ -328,6 +333,7 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FrmClientes";
             this.Text = "FrmClientes";
+            this.Load += new System.EventHandler(this.FrmClientes_Load);
             this.pnlTitulo.ResumeLayout(false);
             this.pnlTitulo.PerformLayout();
             this.panel1.ResumeLayout(false);
@@ -336,7 +342,7 @@
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgClientes)).EndInit();
             this.panel4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MensajeError)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -362,6 +368,6 @@
         private System.Windows.Forms.Panel panel4;
         private MaterialSkin.Controls.MaterialRaisedButton btnSalir;
         private System.Windows.Forms.TextBox txtIdCliente;
-        private System.Windows.Forms.ErrorProvider errorProvider1;
+        private System.Windows.Forms.ErrorProvider MensajeError;
     }
 }

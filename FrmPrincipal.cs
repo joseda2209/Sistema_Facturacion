@@ -77,8 +77,8 @@ namespace Sistema_Facturacion
 
         private void btnFacturas_Click(object sender, EventArgs e)
         {
-            FrmFacturas frmFacturas = new FrmFacturas();
-            AbrirForm(frmFacturas);
+            FrmListaFacturas frmListaFacturas = new FrmListaFacturas();
+            AbrirForm(frmListaFacturas);
         }
 
         private void btnInformes_Click(object sender, EventArgs e)

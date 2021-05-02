@@ -28,10 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblProductos = new MaterialSkin.Controls.MaterialLabel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtDetalle = new System.Windows.Forms.TextBox();
             this.txtImagenProducto = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.lblStock = new MaterialSkin.Controls.MaterialLabel();
             this.lblPrecioVenta = new MaterialSkin.Controls.MaterialLabel();
@@ -50,16 +51,18 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.btnSalir = new MaterialSkin.Controls.MaterialRaisedButton();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.dgClientes = new System.Windows.Forms.DataGridView();
+            this.dgProductos = new System.Windows.Forms.DataGridView();
             this.btnBuscar = new MaterialSkin.Controls.MaterialRaisedButton();
             this.txtBuscar = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.txtIdProducto = new System.Windows.Forms.TextBox();
+            this.MensajeError = new System.Windows.Forms.ErrorProvider(this.components);
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgClientes)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgProductos)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MensajeError)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -89,7 +92,7 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.txtIdProducto);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.txtDetalle);
             this.groupBox1.Controls.Add(this.txtImagenProducto);
             this.groupBox1.Controls.Add(this.lblStock);
             this.groupBox1.Controls.Add(this.lblPrecioVenta);
@@ -109,15 +112,15 @@
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             // 
-            // textBox1
+            // txtDetalle
             // 
-            this.textBox1.Location = new System.Drawing.Point(196, 149);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(303, 71);
-            this.textBox1.TabIndex = 11;
-            this.textBox1.Text = "Detalles:";
+            this.txtDetalle.Location = new System.Drawing.Point(196, 149);
+            this.txtDetalle.Margin = new System.Windows.Forms.Padding(2);
+            this.txtDetalle.Multiline = true;
+            this.txtDetalle.Name = "txtDetalle";
+            this.txtDetalle.Size = new System.Drawing.Size(303, 71);
+            this.txtDetalle.TabIndex = 11;
+            this.txtDetalle.Text = "Detalles:";
             // 
             // txtImagenProducto
             // 
@@ -303,6 +306,7 @@
             this.btnEliminar.TabIndex = 2;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // btnActualizar
             // 
@@ -316,6 +320,7 @@
             this.btnActualizar.TabIndex = 1;
             this.btnActualizar.Text = "Actualizar";
             this.btnActualizar.UseVisualStyleBackColor = true;
+            this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
             // 
             // btnNuevo
             // 
@@ -329,6 +334,7 @@
             this.btnNuevo.TabIndex = 0;
             this.btnNuevo.Text = "Nuevo";
             this.btnNuevo.UseVisualStyleBackColor = true;
+            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
             // panel4
             // 
@@ -342,7 +348,7 @@
             // btnSalir
             // 
             this.btnSalir.Depth = 0;
-            this.btnSalir.Location = new System.Drawing.Point(28, 103);
+            this.btnSalir.Location = new System.Drawing.Point(28, 113);
             this.btnSalir.Margin = new System.Windows.Forms.Padding(2);
             this.btnSalir.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnSalir.Name = "btnSalir";
@@ -355,7 +361,7 @@
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.dgClientes);
+            this.panel3.Controls.Add(this.dgProductos);
             this.panel3.Controls.Add(this.btnBuscar);
             this.panel3.Controls.Add(this.txtBuscar);
             this.panel3.Location = new System.Drawing.Point(11, 301);
@@ -364,16 +370,17 @@
             this.panel3.Size = new System.Drawing.Size(510, 218);
             this.panel3.TabIndex = 6;
             // 
-            // dgClientes
+            // dgProductos
             // 
-            this.dgClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgClientes.Location = new System.Drawing.Point(23, 53);
-            this.dgClientes.Margin = new System.Windows.Forms.Padding(2);
-            this.dgClientes.Name = "dgClientes";
-            this.dgClientes.RowHeadersWidth = 51;
-            this.dgClientes.RowTemplate.Height = 24;
-            this.dgClientes.Size = new System.Drawing.Size(466, 149);
-            this.dgClientes.TabIndex = 2;
+            this.dgProductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgProductos.Location = new System.Drawing.Point(23, 53);
+            this.dgProductos.Margin = new System.Windows.Forms.Padding(2);
+            this.dgProductos.Name = "dgProductos";
+            this.dgProductos.RowHeadersWidth = 51;
+            this.dgProductos.RowTemplate.Height = 24;
+            this.dgProductos.Size = new System.Drawing.Size(466, 149);
+            this.dgProductos.TabIndex = 2;
+            this.dgProductos.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgProductos_CellMouseClick);
             // 
             // btnBuscar
             // 
@@ -387,6 +394,7 @@
             this.btnBuscar.TabIndex = 1;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // txtBuscar
             // 
@@ -406,11 +414,15 @@
             // 
             // txtIdProducto
             // 
-            this.txtIdProducto.Location = new System.Drawing.Point(60, 200);
+            this.txtIdProducto.Location = new System.Drawing.Point(23, 200);
             this.txtIdProducto.Name = "txtIdProducto";
-            this.txtIdProducto.Size = new System.Drawing.Size(34, 20);
+            this.txtIdProducto.Size = new System.Drawing.Size(55, 20);
             this.txtIdProducto.TabIndex = 12;
             this.txtIdProducto.Visible = false;
+            // 
+            // MensajeError
+            // 
+            this.MensajeError.ContainerControl = this;
             // 
             // FrmProductos
             // 
@@ -426,6 +438,7 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FrmProductos";
             this.Text = "FrmProductos";
+            this.Load += new System.EventHandler(this.FrmProductos_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
@@ -433,7 +446,8 @@
             this.panel2.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgClientes)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgProductos)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MensajeError)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -453,7 +467,7 @@
         private MaterialSkin.Controls.MaterialLabel lblPrecioCompra;
         private MaterialSkin.Controls.MaterialSingleLineTextField txtStock;
         private MaterialSkin.Controls.MaterialLabel lblStock;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtDetalle;
         private MaterialSkin.Controls.MaterialSingleLineTextField txtImagenProducto;
         private System.Windows.Forms.Panel panel2;
         private MaterialSkin.Controls.MaterialRaisedButton btnEliminar;
@@ -462,9 +476,10 @@
         private System.Windows.Forms.Panel panel4;
         private MaterialSkin.Controls.MaterialRaisedButton btnSalir;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.DataGridView dgClientes;
+        private System.Windows.Forms.DataGridView dgProductos;
         private MaterialSkin.Controls.MaterialRaisedButton btnBuscar;
         private MaterialSkin.Controls.MaterialSingleLineTextField txtBuscar;
         private System.Windows.Forms.TextBox txtIdProducto;
+        private System.Windows.Forms.ErrorProvider MensajeError;
     }
 }

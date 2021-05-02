@@ -42,12 +42,12 @@
             this.btnEliminar = new MaterialSkin.Controls.MaterialRaisedButton();
             this.btnActualizar = new MaterialSkin.Controls.MaterialRaisedButton();
             this.btnNuevo = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.MensajeError = new System.Windows.Forms.ErrorProvider(this.components);
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MensajeError)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -80,11 +80,11 @@
             this.groupBox1.Controls.Add(this.txtUsuario);
             this.groupBox1.Controls.Add(this.cboEmpleado);
             this.groupBox1.Controls.Add(this.lblEmpleado);
-            this.groupBox1.Location = new System.Drawing.Point(11, 61);
+            this.groupBox1.Location = new System.Drawing.Point(11, 105);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox1.Size = new System.Drawing.Size(510, 240);
+            this.groupBox1.Size = new System.Drawing.Size(510, 196);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             // 
@@ -92,7 +92,7 @@
             // 
             this.txtContraseña.Depth = 0;
             this.txtContraseña.Hint = "Contraseña";
-            this.txtContraseña.Location = new System.Drawing.Point(122, 145);
+            this.txtContraseña.Location = new System.Drawing.Point(119, 123);
             this.txtContraseña.Margin = new System.Windows.Forms.Padding(2);
             this.txtContraseña.MouseState = MaterialSkin.MouseState.HOVER;
             this.txtContraseña.Name = "txtContraseña";
@@ -100,7 +100,7 @@
             this.txtContraseña.SelectedText = "";
             this.txtContraseña.SelectionLength = 0;
             this.txtContraseña.SelectionStart = 0;
-            this.txtContraseña.Size = new System.Drawing.Size(295, 23);
+            this.txtContraseña.Size = new System.Drawing.Size(335, 23);
             this.txtContraseña.TabIndex = 3;
             this.txtContraseña.UseSystemPasswordChar = false;
             // 
@@ -108,7 +108,7 @@
             // 
             this.txtUsuario.Depth = 0;
             this.txtUsuario.Hint = "Nombre de Usuario";
-            this.txtUsuario.Location = new System.Drawing.Point(122, 101);
+            this.txtUsuario.Location = new System.Drawing.Point(119, 84);
             this.txtUsuario.Margin = new System.Windows.Forms.Padding(2);
             this.txtUsuario.MouseState = MaterialSkin.MouseState.HOVER;
             this.txtUsuario.Name = "txtUsuario";
@@ -116,18 +116,19 @@
             this.txtUsuario.SelectedText = "";
             this.txtUsuario.SelectionLength = 0;
             this.txtUsuario.SelectionStart = 0;
-            this.txtUsuario.Size = new System.Drawing.Size(295, 23);
+            this.txtUsuario.Size = new System.Drawing.Size(335, 23);
             this.txtUsuario.TabIndex = 2;
             this.txtUsuario.UseSystemPasswordChar = false;
             // 
             // cboEmpleado
             // 
             this.cboEmpleado.FormattingEnabled = true;
-            this.cboEmpleado.Location = new System.Drawing.Point(122, 49);
+            this.cboEmpleado.Location = new System.Drawing.Point(119, 40);
             this.cboEmpleado.Margin = new System.Windows.Forms.Padding(2);
             this.cboEmpleado.Name = "cboEmpleado";
-            this.cboEmpleado.Size = new System.Drawing.Size(332, 21);
+            this.cboEmpleado.Size = new System.Drawing.Size(335, 21);
             this.cboEmpleado.TabIndex = 1;
+            this.cboEmpleado.SelectionChangeCommitted += new System.EventHandler(this.cboEmpleado_SelectionChangeCommitted);
             // 
             // lblEmpleado
             // 
@@ -135,7 +136,7 @@
             this.lblEmpleado.Depth = 0;
             this.lblEmpleado.Font = new System.Drawing.Font("Roboto", 11F);
             this.lblEmpleado.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblEmpleado.Location = new System.Drawing.Point(21, 51);
+            this.lblEmpleado.Location = new System.Drawing.Point(21, 40);
             this.lblEmpleado.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblEmpleado.MouseState = MaterialSkin.MouseState.HOVER;
             this.lblEmpleado.Name = "lblEmpleado";
@@ -149,13 +150,13 @@
             this.panel4.Location = new System.Drawing.Point(527, 305);
             this.panel4.Margin = new System.Windows.Forms.Padding(2);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(162, 153);
+            this.panel4.Size = new System.Drawing.Size(162, 128);
             this.panel4.TabIndex = 8;
             // 
             // btnSalir
             // 
             this.btnSalir.Depth = 0;
-            this.btnSalir.Location = new System.Drawing.Point(28, 62);
+            this.btnSalir.Location = new System.Drawing.Point(28, 52);
             this.btnSalir.Margin = new System.Windows.Forms.Padding(2);
             this.btnSalir.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnSalir.Name = "btnSalir";
@@ -180,7 +181,7 @@
             // btnEliminar
             // 
             this.btnEliminar.Depth = 0;
-            this.btnEliminar.Location = new System.Drawing.Point(28, 101);
+            this.btnEliminar.Location = new System.Drawing.Point(28, 181);
             this.btnEliminar.Margin = new System.Windows.Forms.Padding(2);
             this.btnEliminar.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnEliminar.Name = "btnEliminar";
@@ -189,11 +190,12 @@
             this.btnEliminar.TabIndex = 2;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // btnActualizar
             // 
             this.btnActualizar.Depth = 0;
-            this.btnActualizar.Location = new System.Drawing.Point(28, 65);
+            this.btnActualizar.Location = new System.Drawing.Point(28, 119);
             this.btnActualizar.Margin = new System.Windows.Forms.Padding(2);
             this.btnActualizar.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnActualizar.Name = "btnActualizar";
@@ -202,11 +204,12 @@
             this.btnActualizar.TabIndex = 1;
             this.btnActualizar.Text = "Actualizar";
             this.btnActualizar.UseVisualStyleBackColor = true;
+            this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
             // 
             // btnNuevo
             // 
             this.btnNuevo.Depth = 0;
-            this.btnNuevo.Location = new System.Drawing.Point(28, 29);
+            this.btnNuevo.Location = new System.Drawing.Point(28, 55);
             this.btnNuevo.Margin = new System.Windows.Forms.Padding(2);
             this.btnNuevo.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnNuevo.Name = "btnNuevo";
@@ -215,16 +218,17 @@
             this.btnNuevo.TabIndex = 0;
             this.btnNuevo.Text = "Nuevo";
             this.btnNuevo.UseVisualStyleBackColor = true;
+            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
-            // errorProvider1
+            // MensajeError
             // 
-            this.errorProvider1.ContainerControl = this;
+            this.MensajeError.ContainerControl = this;
             // 
             // FrmSeguridad
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(700, 470);
+            this.ClientSize = new System.Drawing.Size(700, 442);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.groupBox1);
@@ -233,13 +237,14 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FrmSeguridad";
             this.Text = "FrmSeguridad";
+            this.Load += new System.EventHandler(this.FrmSeguridad_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MensajeError)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -259,6 +264,6 @@
         private MaterialSkin.Controls.MaterialRaisedButton btnEliminar;
         private MaterialSkin.Controls.MaterialRaisedButton btnActualizar;
         private MaterialSkin.Controls.MaterialRaisedButton btnNuevo;
-        private System.Windows.Forms.ErrorProvider errorProvider1;
+        private System.Windows.Forms.ErrorProvider MensajeError;
     }
 }

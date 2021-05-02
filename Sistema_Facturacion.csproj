@@ -49,6 +49,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Acceso_Datos.cs" />
     <Compile Include="FrmAcerca.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -91,6 +92,12 @@
     <Compile Include="FrmInformes.Designer.cs">
       <DependentUpon>FrmInformes.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmListaFacturas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmListaFacturas.Designer.cs">
+      <DependentUpon>FrmListaFacturas.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -128,6 +135,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmAyuda.resx">
       <DependentUpon>FrmAyuda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCategoria.resx">
+      <DependentUpon>FrmCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmListaFacturas.resx">
+      <DependentUpon>FrmListaFacturas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
